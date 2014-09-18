@@ -1,4 +1,4 @@
 laedit.net
 ==========
 
-laedit.net website
+www.laedit.net website
