@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#mufasa {
+    width: 960px;
+    margin: auto;
+    padding-top: 200px;
+    padding-left: 100px;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 13pt;
+    font-weight: 700;
+    color: #272727;
+}
+
+h2{
+    font-size: 25pt;
+    font-weight: 300;
+    color: #515151;
+}
+
+p {
+    clear: both;
+    margin-top: 90px;
+    color: #4f7038;
+    font-style: italic;
+    font-size: 13pt;
+}
+
+#simba a {
+    width: 26px;
+    height: 26px;
+    display: block;
+    float: left;
+    margin: 24px 2px 0 2px;
+}
+
+ #simba a.twitter:hover {
+	color: #4099ff;
+ }
+ 
+ #simba a.stack:hover {
+	color: #fe7a15;
+ }
+ 
+ #simba a.black:hover {
+	color: black;
+ }
+ 
+ #simba a.viadeo {
+	background: url('icon-viadeo.svg') no-repeat center center;
+	display: block;
+	height: 20px;
+	background-size: contain;
+ }
+
+ .viadeo-fill {
+	fill: blue;
+ }
+ 
+ .viadeo-fill :hover{
+	fill: #fe7a15;
+ }
+ 
+a.behrev {
+    line-height: 160%;
+	text-decoration:none;
+    color: #33e;
+}
+
+.behrev:hover {
+    text-decoration: underline;
+}
+    
+footer {
+	margin: 30px 0 0 200px;
+	display: block;
+	color: #515151;
+}    
