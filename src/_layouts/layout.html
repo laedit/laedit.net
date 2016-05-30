@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+		<title>{{ page.title }} {% if page.title != site.title %}&ndash; {{ site.title }}{% endif %}</title>
+
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link href="/rss/" type="application/rss+xml" rel="alternate" title="RSS Blog Feed" />
+		<link href="/atom/" type="application/atom+xml" rel="alternate" title="ATOM Blog Feed" />
+		<link rel="stylesheet" type="text/css" href="/css/style.css" />
+		{% if page.id == '/about/' %}
+		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+		{% endif %}
+		<!--[if lt IE 9]>
+			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		{% include google_analytics.html %}
+	</head>
+	<body>
+		<header>
+			<a href="/">{{ site.title }}</a>
+			<span class="subtitle">{{ site.subtitle }}</span>
+		</header>
+
+		<nav>
+			<ul>
+				<li><a href="/" class="{% if page.id == '/' %}active{% endif %} tile quarter limebg">Blog</a></li>
+				{% comment %}
+				<!-- <li><a href="/" class="{% if page.id == 'blog' %}active{% endif %} tile quarter limebg">Blog</a></li>
+				<li><a href="/archives/" class="{% if page.id == 'archives' %}active{% endif %} tile quarter greenbg">Archives</a></li>
+				<li><a href="/rss/" class="tile quarter orangebg">RSS</a></li> -->
+				<li><a href="/projects/" class="{% if page.id == '/projects/' %}active{% endif %} tile quarter bluebg">Projects</a></li>
+				{% endcomment %}
+				<li><a href="/about/" class="{% if page.id == '/about/' %}active{% endif %} tile quarter tealbg">About</a></li>
+			</ul>
+		</nav>
+		<main role="main">
+				{{ content }}
+		</main>
+
+		<footer>
+			&copy; {{ site.time | date: "%Y" }} &ndash; {{ site.author }} 
+			| Built using <a href="http://code52.org/pretzel">Pretzel</a> and <a href="http://code52.org/metro.css">metro.css</a>
+			| <a href="/rss/">RSS</a>
+		</footer>
+	</body>
+</html>

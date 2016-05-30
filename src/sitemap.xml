@@ -1,0 +1,37 @@
+---
+layout: nil
+sitemap: false
+custom_css: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset>
+<css>{{page.custom_css}}</css>
+<sitemap>{{page.sitemap}}</sitemap>
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+  http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <!-- Generated with pretzel -->
+{%- for post in site.posts -%}
+  <url>
+    <loc>http://laedit.net{{ post.url }}</loc>
+    <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.00</priority>
+<id>{{ post.id }}</id>
+  </url>
+{%- endfor -%}
+<!-- TODO pages -->
+{%- for p in site.pages -%}
+{%- if p.url and p.sitemap != false -%}
+  <url>
+    <loc>http://laedit.net{{ p.url }}</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.00</priority>
+<sitemap>{{ p.bag.sitemap }}</sitemap>
+<id>{{ p.id }}</id>
+<css>{{p.custom_css}}</css>
+  </url>
+{%- endif -%}
+{%- endfor -%}
+</urlset>

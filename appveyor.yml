@@ -1,0 +1,31 @@
+version: 1.0.{build}
+
+environment:
+  ftp_password:
+    secure: eK/zCvZEGU6BcRfo1CoYnlrLD7SoyaUyOb3aIq8CkmQ=
+
+install:
+  - choco install pretzel -y
+
+cache:
+  - C:\tools\Pretzel -> appveyor.yml
+
+build_script:
+- C:\tools\Pretzel\pretzel bake src
+
+test: off
+
+artifacts:
+- path: src/_site
+  name: compiled_site
+
+
+# deploy:
+# - provider: FTP
+#   host: laedit.net
+#   protocol: ftp
+#   username: zlaeditn12713ne
+#   password:
+#     secure: eK/zCvZEGU6BcRfo1CoYnlrLD7SoyaUyOb3aIq8CkmQ=
+#   folder: /httpdocs/laedit
+#   application: site\compiled_site.zip

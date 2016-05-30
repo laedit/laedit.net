@@ -1,0 +1,28 @@
+---
+layout: layout
+---
+
+<article>
+	<h2> {{page.title}} </h2>
+	<time datetime="{{ page.date | date: "%Y-%m-%d" }}" pubdate>{{ page.date | date: "%e %B %Y"  }}</time>
+	{% if page.tags %}
+	<ul>
+		{% for tag in page.tags %}
+			<li><a href="/tag/{{ tag }}">{{ tag }}</a></li>
+		{% endfor %}
+	</ul>
+	{% endif %}
+	{{ content }}
+</article>
+<nav>
+	<div class="left"> {% if page.previous.url %} <a href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">&larr; {{page.previous.title}}</a> {% endif %} </div>
+	<div class="right"> {% if page.next.url %} <a href="{{page.next.url}}" title="next Post: {{page.next.title}}">{{page.next.title}} &rarr; </a> {% endif %} </div>
+	<div class="clear">&nbsp;</div>
+</nav>
+
+
+{% if page.comments %}
+{% comment %}
+ Add comments 
+{% endcomment %}
+{% endif %}

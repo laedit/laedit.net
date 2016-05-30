@@ -1,0 +1,77 @@
+@tilebasewidth: 130px;
+@tilepadding: 5px;
+@tilemargin: 10px;
+@tilesize: (@tilepadding*2) + @tilebasewidth + @tilemargin;
+@2tilewidth: (@tilebasewidth + @tilemargin) *2;
+@smalltilesize: (@tilepadding*2) + @tilebasewidth /2 + @tilemargin;
+@small2tilewidth: (@tilebasewidth /2 + @tilemargin) *2;
+
+.tile {
+	-webkit-perspective: 0;
+	-webkit-transform-style: preserve-3d;
+	-webkit-transition: -webkit-transform 0.2s;
+	float: left;
+	margin-right: @tilemargin;
+	margin-bottom: @tilemargin;
+	text-align:center;
+	padding: @tilepadding;
+	opacity:0.75;
+	text-align: center;
+
+	h1, h2, h3, h4, h5, h6 {
+		color: @white;
+		-webkit-user-select: none;
+	}
+
+	h2 { font-size: 1.75em; margin-top: 0px - @tilemargin; margin-left:0px; }
+
+	a:hover { text-decoration: none; }
+}
+
+
+.tile img { border :0;}
+.tile:hover { opacity:1;}
+.tiles { .clear; }
+.tilerow  {
+	float:left;
+	-webkit-perspective: 0;
+	-webkit-transform-style: preserve-3d;
+	-webkit-user-select: none;
+}
+
+.tilesize(@width, @height, @lineHeight) {
+	width: @width;
+	height: @height;
+	line-height: @lineHeight;
+}
+.one {
+	.tilesize(@tilebasewidth, @tilebasewidth, @tilebasewidth);
+}
+.two-h {
+	.tilesize(@2tilewidth, @tilebasewidth, @tilebasewidth);
+}
+.two-v {
+	.tilesize(@tilebasewidth, @2tilewidth, @2tilewidth);
+}
+// add half-v and half-h
+.half-h {
+	.tilesize(@small2tilewidth, @tilebasewidth /2, @tilebasewidth /2);
+}
+.half-v {
+	.tilesize(@tilebasewidth /2, @small2tilewidth, @tilebasewidth);
+}
+.quarter {
+	.tilesize(@tilebasewidth /2, @tilebasewidth /2, @tilebasewidth /2);
+}
+
+.firstcol, .secondcol, .thirdcol, .fourthcol, .fifthcol, .smallfirstcol, .smallsecondcol, .smallthirdcol, .smallfourthcol, .smallfifthcol { position: absolute;}
+.firstcol { }
+.secondcol { margin-left: @tilesize*1; }
+.thirdcol { margin-left: @tilesize*2; }
+.fourthcol { margin-left: @tilesize*3; }
+.fifthcol { margin-left: @tilesize*4; }
+.smallfirstcol { }
+.smallsecondcol { margin-left: @smalltilesize*1; }
+.smallthirdcol { margin-left: @smalltilesize*2; }
+.smallfourthcol { margin-left: @smalltilesize*3; }
+.smallfifthcol { margin-left: @smalltilesize*4; }
