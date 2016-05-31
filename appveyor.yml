@@ -19,15 +19,15 @@ artifacts:
 - path: src/_site
   name: compiled_site
 
-# before_deploy:
-# - ps: .\Clear-FtpDirectory.ps1
+before_deploy:
+- ps: .\Clear-FtpDirectory.ps1
 
-# deploy:
-# - provider: FTP
-#   host: laedit.net
-#   protocol: ftp
-#   username: zlaeditn12713ne
-#   password:
-#     secure: eK/zCvZEGU6BcRfo1CoYnlrLD7SoyaUyOb3aIq8CkmQ=
-#   folder: /httpdocs/laedit
-#   application: site\compiled_site.zip
+deploy:
+- provider: FTP
+  host: laedit.net
+  protocol: ftp
+  username: zlaeditn12713ne
+  password:
+    secure: eK/zCvZEGU6BcRfo1CoYnlrLD7SoyaUyOb3aIq8CkmQ=
+  folder: /httpdocs/laedit
+  application: site\compiled_site.zip
