@@ -30,4 +30,4 @@ deploy:
   password:
     secure: eK/zCvZEGU6BcRfo1CoYnlrLD7SoyaUyOb3aIq8CkmQ=
   folder: /httpdocs/laedit
-  application: site\compiled_site.zip
+  application: src\compiled_site.zip
