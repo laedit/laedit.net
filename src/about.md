@@ -27,10 +27,10 @@ I am mostly a .net guy but I am interested in every technology.
 ## Colophon
 This website is :
 
-  - Generated with [Pretzel](http://code52.org/pretzel)
-  - Designed with [metro.css](http://code52.org/metro.css)
+  - Generated with [Pretzel](http://code52.org/pretzel/)
+  - Designed with [metro.css](http://code52.org/metro.css/)
   - Versioned with [GitHub](https://github.com)
-  - Builded and tested with [AppVeyor](http://www.appveyor.com)
+  - Builded and tested with [AppVeyor](https://www.appveyor.com)
   - Hosted by [Ikoula](http://www.ikoula.com)
 
 Thanks to [Phil Haack](http://haacked.com), [Sylvain Durand](http://www.sylvaindurand.org), [Philipp Rudloff](http://kleinfreund.de), [Jake Ginnivan](http://jake.ginnivan.net), [Brendan Forster](http://www.brendanforster.com/) and [Thomas Levesque](http://www.thomaslevesque.com) for their help through their  articles/repositories.  
