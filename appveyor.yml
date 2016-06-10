@@ -19,8 +19,8 @@ artifacts:
 - path: src/_site
   name: compiled_site
 
-# before_deploy:
-# - ps: .\Clear-FtpDirectory.ps1
+before_deploy:
+- ps: .\Clear-FtpDirectory.ps1
 
 deploy:
 - provider: FTP
