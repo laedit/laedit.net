@@ -10,13 +10,14 @@
 		<link href="/rss/" type="application/rss+xml" rel="alternate" title="RSS Blog Feed" />
 		<link href="/atom/" type="application/atom+xml" rel="alternate" title="ATOM Blog Feed" />
 		<link rel="stylesheet" type="text/css" href="/css/style.css" />
-		{% if page.id == '/about/' %}
+		<link rel="stylesheet" href="//cdn.jsdelivr.net/highlight.js/9.4.0/styles/default.min.css" />
 		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-		{% endif %}
 		<!--[if lt IE 9]>
 			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 		{% include google_analytics.html %}
+		<script src="/scripts/highlight.pack.js"></script>
+		<script>hljs.initHighlightingOnLoad();</script>
 	</head>
 	<body>
 		<header>
@@ -28,12 +29,9 @@
 			<ul>
 				<li><a href="/" class="{% if page.id == '/' %}active{% endif %} tile quarter limebg">Blog</a></li>
 				{% comment %}
-				<!-- <li><a href="/" class="{% if page.id == 'blog' %}active{% endif %} tile quarter limebg">Blog</a></li>
-				<li><a href="/archives/" class="{% if page.id == 'archives' %}active{% endif %} tile quarter greenbg">Archives</a></li>
-				<li><a href="/rss/" class="tile quarter orangebg">RSS</a></li> -->
 				<li><a href="/projects/" class="{% if page.id == '/projects/' %}active{% endif %} tile quarter bluebg">Projects</a></li>
 				{% endcomment %}
-				<li><a href="/about/" class="{% if page.id == '/about/' %}active{% endif %} tile quarter tealbg">About</a></li>
+				<li><a href="/about/" class="{% if page.id == '/about/' %}active{% endif %} tile quarter limebg">About</a></li>
 			</ul>
 		</nav>
 		<main>

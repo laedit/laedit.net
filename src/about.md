@@ -33,7 +33,7 @@ This website is :
   - Builded and tested with [AppVeyor](https://www.appveyor.com)
   - Hosted by [Ikoula](http://www.ikoula.com)
 
-Thanks to [Phil Haack](http://haacked.com), [Sylvain Durand](http://www.sylvaindurand.org), [Philipp Rudloff](http://kleinfreund.de), [Jake Ginnivan](http://jake.ginnivan.net), [Brendan Forster](http://www.brendanforster.com/) and [Thomas Levesque](http://www.thomaslevesque.com) for their help through their  articles/repositories.  
+Thanks to [Phil Haack](http://haacked.com), [Sylvain Durand](http://www.sylvaindurand.org), [Philipp Rudloff](http://kleinfreund.de), [Jake Ginnivan](http://jake.ginnivan.net), [Brendan Forster](http://www.brendanforster.com/), [Thomas Levesque](http://www.thomaslevesque.com) and [Guillaume Scheibel](http://gscheibel.net) for their help through their  articles/repositories.  
 
 ## License
 All content on this website licensed under the [Creative Commons Attribution 4.0](http://creativecommons.org/licenses/by/4.0/).

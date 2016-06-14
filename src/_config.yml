@@ -30,3 +30,6 @@ google_analytics_tracking_id: UA-6626755-4
 #     values:
 #       categories: [fr]
 #       lang: fr
+
+# tag
+tag_pages_layout: tag
