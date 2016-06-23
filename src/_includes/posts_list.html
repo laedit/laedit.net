@@ -1,4 +1,4 @@
-<ul class="posts">{% assign posts=site.posts %}{% for post in posts %}{% capture hide %}
+<ul class="posts">{% if posts == nil %}{% assign posts=site.posts %}{% endif %}{% for post in posts %}{% capture hide %}
     {% capture currentmonth %}{{ post.date | date: "%m/%Y" }}{% endcapture %}
     {% endcapture %}{% if currentmonth != month %}{% unless forloop.first %}
     </ul>
