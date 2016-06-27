@@ -2,6 +2,7 @@
 layout: post
 title: integrate pretzel with appveyor
 tags: [pretzel, appveyor]
+date: 2016-06-14
 ---
 
 [Pretzel](https://github.com/code52/pretzel) is a static web site generator, much like [Jekyll](http://jekyllrb.com) but in .net.  
