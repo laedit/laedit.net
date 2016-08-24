@@ -23,8 +23,9 @@ I am mostly a .net guy but I am interested in every technology.
 </div>
 <br />
 <br />
-  
+
 ## Colophon
+
 This website is :
 
   - Generated with [Pretzel](http://code52.org/pretzel/)
