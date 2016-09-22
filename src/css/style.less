@@ -63,13 +63,21 @@ main ul {
 	margin:0 16;
 
   li {
-	  padding-left: 1em;
-	  text-indent: -.7em;
+      padding-left: 1em;
+      text-indent: -.7em;
 
     &:before {
-	    content: "■";
-	    color: @accent;
-      padding-right: 1em;
+        content: "■";
+        color: @accent;
+        padding-right: 1em;
+    }
+
+    ul {
+        li {
+            &:before {
+                content: "▶";
+            }
+        }
     }
   }
 }
@@ -172,7 +180,7 @@ blockquote p {
 ul.posts {
 	list-style-type: none;
 	li::before {
-		content: '';
+		content: none;
 	}
 
 	span {
@@ -281,4 +289,14 @@ ul.posts {
 
 .icon-viadeo:before {
 	content: "\e601";
+}
+
+article pre[class*="language-"],
+article code[class*="language-"] {
+    color: white;
+    background-color: #3B3D4A !important;
+    border: none !important;
+    border-radius: 0px !important;
+    box-shadow:none !important;
+    text-shadow: none !important;
 }

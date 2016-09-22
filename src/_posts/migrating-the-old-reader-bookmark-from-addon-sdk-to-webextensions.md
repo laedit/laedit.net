@@ -22,13 +22,13 @@ First thing to do: read some [docs](https://developer.mozilla.org/en-US/Add-ons/
 And a good thing to have is [`web-ext`](https://blog.mozilla.org/addons/2016/04/14/developing-extensions-with-web-ext-1-0/) (available on [GitHub](https://github.com/mozilla/web-ext)), which is a command line tool aiming to help running and debugging WebExtensions.  
 It is available through `npm`:
 
-```
+``` bash
 npm install --global web-ext
 ```
 
 In order to ease the process, I have created a small cmd file which will update `web-ext` if necessary and run it :
 
-```
+``` bash
 @echo off
 :: update web-ext
 call npm update -g web-ext
@@ -57,7 +57,7 @@ if [%1]==[beta] (
 
 For the detail, lets begin with the folder tree before:
 
-```
+``` bash
 |- data
 |  |- oldreadericon-16.png
 |  |- oldreadericon-32.png
@@ -77,7 +77,7 @@ For the detail, lets begin with the folder tree before:
 
 And after:
 
-```
+``` bash
 |- _locales
 |  |- en
 |  |  +- messages.json (moved and migrated from en-US.properties)
