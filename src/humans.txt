@@ -17,5 +17,5 @@ Name: Brendan Forster, http://www.brendanforster.com
 /* SITE */
 Last update: {{ site.time | date: "%Y/%m/%d" }}
 Standards: HTML5, CSS3
-Components: Font Awesome, metro.css
+Components: Font Awesome, metro.css, prism.js
 Software: Visual Studio Code, GitHub for Windows, Firefox, Pretzel
