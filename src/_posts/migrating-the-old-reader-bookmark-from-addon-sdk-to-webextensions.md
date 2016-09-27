@@ -3,6 +3,8 @@ layout: post
 title: migrating the old reader bookmark from addon sdk to webextensions
 tags: [firefox addon SDK, webextensions]
 date: 2016-06-27
+tweet_id: 747306054011097088
+comments: true
 ---
 
 [Here](https://github.com/laedit/the-old-reader-bookmark/compare/7ae5b664a477db4a65aab0ceb63698496c103583...ccf3eac7a37ef260e44cda7d3847cfe9bc55faf3) is the comparison of the commits pushed for the addon's migration.{.tldr}

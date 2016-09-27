@@ -11,7 +11,7 @@ layout: layout
 </article>
 
 {% if page.comments %}
-{% comment %}
- Add comments 
-{% endcomment %}
+<div class="comments">
+No comments (for now), but you can reach me on <a href="https://twitter.com/laedit{% if page.tweet_id != nil %}/status/{{page.tweet_id}}{% endif %}">twitter</a>.
+</div>
 {% endif %}
