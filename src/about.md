@@ -29,7 +29,7 @@ I am mostly a .net guy but I am interested in every technology.
 This website is :
 
   - Generated with [Pretzel](http://code52.org/pretzel/)
-  - Designed with [metro.css](http://code52.org/metro.css/)
+  - Designed with [metro.css](http://code52.org/metro.css/) / [Prism](http://prismjs.com)
   - Versioned with [GitHub](https://github.com)
   - Builded and tested with [AppVeyor](https://www.appveyor.com)
   - Hosted by [Ikoula](http://www.ikoula.com)
