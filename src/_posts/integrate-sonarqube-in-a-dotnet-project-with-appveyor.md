@@ -4,6 +4,7 @@ title: integrate sonarqube in a .net project with appveyor
 tags: [sonarqube, appveyor ,fake]
 date: 2016-09-29
 comments: true
+tweet_id: 781713043948462081
 ---
 
 ### What is SonarQube
