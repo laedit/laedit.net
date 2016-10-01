@@ -8,7 +8,14 @@
     "environVar",
     "PowerShell",
     "SonarLint",
-    "APPVEYOR"
+    "APPVEYOR",
+    "NVika",
+    "Chocolatey",
+    "Nuget",
+    "MSBuild",
+    "nvika",
+    "gifffer",
+    "CodeCov"
   ],
   "mistakeTypeToStatus": {
     "Passive voice": "Hint",
