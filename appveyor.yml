@@ -1,34 +1,25 @@
 version: 1.0.{build}
 
 environment:
+  ftp_user:
+    secure: f0a7Ydwv2347FyFroA9W2g==
   ftp_password:
-    secure: eK/zCvZEGU6BcRfo1CoYnlrLD7SoyaUyOb3aIq8CkmQ=
+    secure: Sei1iycTJNEoAKXYRT6R4QsjCmBYgl81iOd2Dp6Ch/s=
 
 install:
   - choco install pretzel -y
   - choco install pretzel.scriptcs -y
+  - pip install creep
 
 cache:
   - C:\tools\Pretzel -> appveyor.yml
+  - '%LOCALAPPDATA%\pip\Cache -> appveyor.yml'
 
 build_script:
-- C:\tools\Pretzel\pretzel bake src
+- ps: .\Bake&Deploy.ps1
 
 test: off
 
 artifacts:
 - path: src/_site
   name: compiled_site
-
-before_deploy:
-- ps: .\Clear-FtpDirectory.ps1
-
-deploy:
-- provider: FTP
-  host: laedit.net
-  protocol: ftp
-  username: zlaeditn12713ne
-  password:
-    secure: eK/zCvZEGU6BcRfo1CoYnlrLD7SoyaUyOb3aIq8CkmQ=
-  folder: /httpdocs/laedit
-  application: src\compiled_site.zip
