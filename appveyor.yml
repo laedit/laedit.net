@@ -17,7 +17,7 @@ cache:
   - '%LOCALAPPDATA%\pip\Cache -> appveyor.yml'
 
 build_script:
-- ps: .\Bake&Deploy.ps1
+- ps: .\BakeAndDeploy.ps1
 
 test: off
 
