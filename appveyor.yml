@@ -14,6 +14,7 @@ install:
 
 cache:
   - C:\tools\Pretzel -> appveyor.yml
+  - C:\ProgramData\chocolatey\lib -> appveyor.yml
   - '%LOCALAPPDATA%\pip\Cache -> appveyor.yml'
 
 build_script:
