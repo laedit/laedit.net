@@ -58,6 +58,8 @@ So I think this line is self-explanatory: no test at all. For now at least, I pl
 
 #### Deploy
 
+Since this post I have set an [incremental FTP deploy]({% post_url Incremental-ftp-deploy-with-creep %}) with [creep](https://github.com/r3c/creep/).{.info}
+
 So, now the goal is to deploy the artifact in a FTP server.  
 You can also deploy it to GitHub, Azure and other, appveyor support quite a few [deployment supports](http://www.appveyor.com/docs/deployment).
 
