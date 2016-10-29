@@ -7,8 +7,8 @@ environment:
     secure: Sei1iycTJNEoAKXYRT6R4QsjCmBYgl81iOd2Dp6Ch/s=
 
 install:
-  - choco install pretzel -y
-  - choco install pretzel.scriptcs -y
+  - cup pretzel -y
+  - cup pretzel.scriptcs -y
   - ps: $env:Path += ";C:\\Python35;C:\\Python35\\Scripts"
   - pip install creep
 
