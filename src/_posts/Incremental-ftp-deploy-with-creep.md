@@ -4,7 +4,7 @@ title: Incremental FTP deploy of a Pretzel site with Creep on AppVeyor
 comments: true
 tags: [creep, ftp, deploy, appveyor, pretzel]
 date: 2016-10-30
-tweet_id: 
+tweet_id: 792499839934296064
 ---
 
 In a [previous post]({% post_url integrate-pretzel-with-appveyor %}), I have described how [Pretzel](https://github.com/code52/pretzel) could be integrated with [AppVeyor](https://www.appveyor.com/) in order to generate and deploy a website.
