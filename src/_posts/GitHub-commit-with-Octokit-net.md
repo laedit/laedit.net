@@ -100,6 +100,7 @@ For example if you want to add a new commit on top of the last commit if the mas
  1. Get the SHA of the latest commit of the master branch
 
 ```csharp
+var headMasterRef = "heads/master";
 // Get reference of master branch
 var masterReference = await github.Git.Reference.Get(owner, repo, headMasterRef);
 // Get the laster commit of this branch
@@ -149,6 +150,7 @@ var commit = await github.Git.Commit.Create(owner, repo, newCommit);
  5. Update the reference of master branch with the SHA of the commit
 
 ```csharp
+var headMasterRef = "heads/master";
 // Update HEAD with the commit
 await github.Git.Reference.Update(owner, repo, headMasterRef, new ReferenceUpdate(commit.Sha));
 ```
