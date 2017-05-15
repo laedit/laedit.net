@@ -8,17 +8,17 @@ third_libraries: [gifffer]
 tweet_id: 782279743488004096
 ---
 
-![nvika icon](/resources/nvika-icon.png) After a while, [NVika](https://github.com/laedit/vika) is finally out of beta.
+![nvika icon](/resources/nvika-1-0-is-out/nvika-icon.png) After a while, [NVika](https://github.com/laedit/vika) is finally out of beta.
 
 #### What does it do
 
 Parse analytics reports and show issues on console or send them to the current build server.
 
 In action:
-<img data-gifffer="/resources/NVika_cmd.gif" />
+<img data-gifffer="/resources/nvika-1-0-is-out/NVika_cmd.gif" />
 
 On [AppVeyor](https://www.appveyor.com/):
-[![nvika on AppVeyor](/resources/nvika-appveyor.png)](/resources/nvika-appveyor.png)
+[![nvika on AppVeyor](/resources/nvika-1-0-is-out/nvika-appveyor.png)](/resources/nvika-1-0-is-out/nvika-appveyor.png)
 
 > Hey, but isn't that something [SonarQube](http://www.sonarqube.org) kinda do?
 
