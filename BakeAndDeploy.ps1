@@ -1,4 +1,4 @@
-C:\tools\Pretzel\pretzel bake src
+pretzel bake src
 
 if ($lastExitCode -ne 0)
 {
