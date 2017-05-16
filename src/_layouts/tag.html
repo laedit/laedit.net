@@ -4,7 +4,7 @@ title: tag {{page.tag}}
 ---
 
 <section>
-    <h2>{{page.tag}} </h2>
+    <h2>tag {{page.tag}}</h2>
     {% for t in site.tags %}
     {% if t.Name == page.tag %}
     {% assign posts = t.posts reverse %}
