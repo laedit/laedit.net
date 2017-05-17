@@ -63,6 +63,7 @@ Within a couple of seconds my solution of 9 projects (+1 for the WIX installer) 
 ![NDepend dashboard](/resources/my-journey-with-ndepend/QIASI_NDepend_dashboard.png)
 
 The integration with Visual Studio is beautiful but could be improved with roslyn integration: having the errors right on the code. It is a [topic on NDepend's UserVoice](https://ndepend.uservoice.com/forums/226344-ndepend-user-voice/suggestions/8973031-provide-auto-code-fixes-for-simple-issues).  
+_**Edit**: it seems that it will be the next big thing of NDepend and has been announced during the [Build event](https://channel9.msdn.com/Events/Build/2017/B8019) (from 29:00)_  
 Some windows are also oddly placed (the info tooltip appear too low and a part is invisible because it is below the screen).
 
 #### VSTS
@@ -84,7 +85,8 @@ So if you want to fix the debt, you just have to browse the rules and either cho
 The good news is that all rules are stored in the `.ndproj` file, so every rule modification will be applicable for everyone running the project.  
 And NDepend detect the modification of the `.ndproj` outside of the application (Visual NDepend or Visual Studio) and propose to reload it automatically. That is excellent but can lead to some freeze of Visual Studio.
 
-One thing I loved is that unlike other static analyzer like Roslyn's analyzers or SonarQube, which I have used and propose only rules related directly to code and best practices, NDepend also provide some architectural level rules (Namespace dependency, project organization, assembly cohesion and such). That forced me to take some steps back and see the "big picture" of my project, which I didn't do in a while.
+One thing I loved is that unlike other static analyzer like Roslyn's analyzers or SonarQube, which I have used and propose only rules related directly to code and best practices, NDepend also provide some architectural level rules (Namespace dependency, project organization, assembly cohesion and such). That forced me to take some steps back and see the "big picture" of my project, which I didn't do in a while.  
+That have allowed me to realized that most projects on the solution doesn't belong here but only on another. So I have reorganized entirely my solution and focus on the only project that matter.
 
 ### rules
 
