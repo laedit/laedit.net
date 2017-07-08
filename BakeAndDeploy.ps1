@@ -1,6 +1,4 @@
-$env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
-
-pretzel bake src
+C:\ProgramData\chocolatey\bin\pretzel bake src
 
 if ($lastExitCode -ne 0)
 {
