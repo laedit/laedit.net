@@ -1,3 +1,5 @@
+refreshenv
+
 pretzel bake src
 
 if ($lastExitCode -ne 0)
