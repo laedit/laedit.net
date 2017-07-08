@@ -13,6 +13,7 @@ install:
   - pip install creep
 
 cache:
+  - C:\ProgramData\chocolatey\bin -> appveyor.yml
   - C:\ProgramData\chocolatey\lib -> appveyor.yml
   - '%LOCALAPPDATA%\pip\Cache -> appveyor.yml'
 

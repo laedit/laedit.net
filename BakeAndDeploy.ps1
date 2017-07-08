@@ -1,4 +1,4 @@
-& 'C:\ProgramData\chocolatey\bin\pretzel' bake src
+pretzel bake src
 
 if ($lastExitCode -ne 0)
 {
