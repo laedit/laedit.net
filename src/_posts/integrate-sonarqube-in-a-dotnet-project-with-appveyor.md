@@ -9,7 +9,7 @@ tweet_id: 781713043948462081
 
 ### What is SonarQube
 
-From their [site](http://www.sonarqube.org/):  
+From their [site](https://www.sonarqube.org/):  
 SonarQube is an open platform to manage code quality. As such, it covers the 7 axes of code quality:
 
 - Architecture & design
@@ -26,13 +26,13 @@ Or you can use the [instance](https://sonarqube.com) dedicated to open source pr
 
 ### Add scan to build
 
-SonarQube works with MSBuild for .net projects through the [Scanner for MSBuild](http://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner+for+MSBuild), which is available on [Chocolatey](https://chocolatey.org/packages/msbuild-sonarqube-runner). There is also an unofficial plugin for [F#](https://github.com/jmecsoftware/sonar-fsharp-plugin) but it isn't available on the public instance of sonarqube.
+SonarQube works with MSBuild for .net projects through the [Scanner for MSBuild](https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner+for+MSBuild), which is available on [Chocolatey](https://chocolatey.org/packages/msbuild-sonarqube-runner). There is also an unofficial plugin for [F#](https://github.com/jmecsoftware/sonar-fsharp-plugin) but it isn't available on the public instance of sonarqube.
 
 All following code examples will be in *classic* command line and in [FAKE](http://fsharp.github.io/FAKE/), which is a build automation system I use in my projects, like for [NVika](https://github.com/laedit/vika/blob/master/build/build.fsx).
 
 #### Installation
 
-Two ways to install it, either download it from the [SonarQube Scanner for MSBuild page](http://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner+for+MSBuild) or through Chocolatey:
+Two ways to install it, either download it from the [SonarQube Scanner for MSBuild page](https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner+for+MSBuild) or through Chocolatey:
 
 ``` PowerShell
 choco install "msbuild-sonarqube-runner" -y
@@ -72,11 +72,11 @@ Mandatory parameters:
 - `/n` | `Name`: name of the project; Displayed on the web interface.
 - `/v` | `Version`: version of the project.
 - `/d:sonar.host.url`: SonarQube server url; default: `http://localhost:9000`; must be set to `https://sonarqube.com` to use the SonarQube public instance.
-- `/d:sonar.login`: your login or [authentication token](docs.sonarqube.org/display/SONAR/User+Token). If login is used, you must use the `sonar.password` with your password as well but this is highly unsecure.
+- `/d:sonar.login`: your login or [authentication token](https://docs.sonarqube.org/display/SONAR/User+Token). If login is used, you must use the `sonar.password` with your password as well but this is highly unsecure.
 
 `SonarQube_Token` is an [AppVeyor](https://www.appveyor.com/) [secure environment variable](https://www.appveyor.com/docs/build-configuration/#secure-variables) wich contains the SonarQube token. While not mandatory it is recommended to generate one by project scanned.
 
-There is also a bunch of other [parameters available](http://docs.sonarqube.org/display/SONAR/Analysis+Parameters).
+There is also a bunch of other [parameters available](https://docs.sonarqube.org/display/SONAR/Analysis+Parameters).
 
 **Build** like usual, with msbuild for example:
 
@@ -133,7 +133,7 @@ let isAppVeyorBuild = buildServer = AppVeyor
 
 #### Additional settings
 
-You might want to subscribe to [notifications](http://docs.sonarqube.org/display/SONAR/Notifications+-+Administration) in order to be aware of each new issues or changes of the quality gate status.
+You might want to subscribe to [notifications](https://docs.sonarqube.org/display/SONAR/Notifications+-+Administration) in order to be aware of each new issues or changes of the quality gate status.
 
 
 But if you use the [public instance](https://sonarqube.com), subscribe only for specific projects if you want to avoid getting spammed with notifications of all projects.
@@ -142,7 +142,7 @@ Also, even if SonarQube doesn't propose built-in badges, [shields](http://shield
 
 ### Use SonarQube in Pull Request builds
 
-SonarQube have a [GitHub](http://docs.sonarqube.org/display/PLUG/GitHub+Plugin), which can handle the pull request build without pushing the results to SonarQube.
+SonarQube have a [GitHub](https://docs.sonarqube.org/display/PLUG/GitHub+Plugin), which can handle the pull request build without pushing the results to SonarQube.
 
 You just have to add several parameters:
 
@@ -186,4 +186,4 @@ let sonarSettings = match isPR with
 
 ### SonarLint
 
-If you want to find issues before committing, you can use [SonarLint](http://www.sonarlint.org/), either in your favorite IDE or through [command line](http://www.sonarlint.org/commandline/).
+If you want to find issues before committing, you can use [SonarLint](https://www.sonarlint.org/), either in your favorite IDE or through [command line](https://www.sonarlint.org/commandline/).
