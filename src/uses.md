@@ -16,6 +16,8 @@ Inspired by Wes Bos and his [uses.tech](https://uses.tech/) website.
     - NVIDIA GeForce GTX 1070
     - SSD 120 GB / SSD 500 GB / HDD 2TB
     - Samsung S23C350 23.1" / Samsung SyncMaster 22.3"
+    - Windows 10 Pro
+* Microsoft Lumia 532 / Windows 10 Mobile
 
 ## Software
 
