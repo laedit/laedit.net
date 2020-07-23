@@ -6,7 +6,7 @@ permalink: /about/
 sitemap: true
 ---
 
-##  Me
+## Me
 My name is Jérémie Bertrand, living in Strasbourg, France.  
 I am a software developer currently working for Euro-Information and member of the [fier d'être développeur](http://fierdetredeveloppeur.org/) (proud to be developer) association.  
 My English can be very clumsy so please forgive me, or better: [edit me](https://github.com/laedit/laedit.net).  
@@ -37,7 +37,7 @@ This website is :
   - Builded and tested with [AppVeyor](https://www.appveyor.com)
   - Hosted by [Ikoula](http://www.ikoula.com)
 
-Thanks to [Phil Haack](http://haacked.com), [Sylvain Durand](http://www.sylvaindurand.org), [Philipp Rudloff](http://kleinfreund.de), [Jake Ginnivan](http://jake.ginnivan.net), [Brendan Forster](http://www.brendanforster.com/), [Thomas Levesque](http://www.thomaslevesque.com) and [Guillaume Scheibel](http://gscheibel.net) for their help through their  articles/repositories.  
+Thanks to [Phil Haack](http://haacked.com), [Sylvain Durand](http://www.sylvaindurand.org), [Philipp Rudloff](http://kleinfreund.de), [Jake Ginnivan](http://jake.ginnivan.net), [Brendan Forster](http://www.brendanforster.com/), [Thomas Levesque](http://www.thomaslevesque.com) and [Guillaume Scheibel](http://gscheibel.net) for their help through their articles/repositories.
 
 ## License
 All content on this website licensed under the [Creative Commons Attribution 4.0](http://creativecommons.org/licenses/by/4.0/).
