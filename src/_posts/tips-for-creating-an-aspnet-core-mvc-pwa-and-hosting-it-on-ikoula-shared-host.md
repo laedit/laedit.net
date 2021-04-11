@@ -4,7 +4,7 @@ title: Tips for creating an ASP.NET Core MVC PWA and hosting it on Ikoula Shared
 comments: true
 tags: [PWA, ikoula, asp.net]
 date: 2021-04-01
-tweet_id: 
+tweet_id: 1381161144723898371
 ---
 
 **Disclaimer**: This is not a precise how-to but merely some tips.{.info}
