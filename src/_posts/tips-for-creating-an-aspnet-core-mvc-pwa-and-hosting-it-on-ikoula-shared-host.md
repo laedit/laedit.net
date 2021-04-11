@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Creating an ASP.NET Core MVC PWA and hosting it on Ikoula Shared Host
+title: Tips for creating an ASP.NET Core MVC PWA and hosting it on Ikoula Shared Host
 comments: true
 tags: [PWA, ikoula, asp.net]
 date: 2021-04-01
