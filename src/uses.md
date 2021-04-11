@@ -18,13 +18,14 @@ Inspired by Wes Bos and his [uses.tech](https://uses.tech/) website.
     - Samsung S23C350 23.1" / Samsung SyncMaster 22.3"
     - Windows 10 Pro
 * Microsoft Lumia 532 / Windows 10 Mobile
+* Librem 5 (waiting) / PureOS
 
 ## Software
 
 * [Visual Studio](https://visualstudio.microsoft.com/vs/)
 * [Visual Studio Code](https://code.visualstudio.com/)
 * [Notepad++](https://notepad-plus-plus.org/)
-* [Powershell Core](https://github.com/powershell/powershell) with [posh-git](https://github.com/dahlbyk/posh-git) and [PSReadLine](https://github.com/PowerShell/PSReadLine)
+* [Powershell Core](https://github.com/powershell/powershell) with [posh-git](https://github.com/dahlbyk/posh-git), [oh-my-posh](https://ohmyposh.dev/) and [PSReadLine](https://github.com/PowerShell/PSReadLine)
 * [GitHub Desktop](https://desktop.github.com/)
 * [Paint.net](https://www.getpaint.net/)
 * [Firefox Developer Edition](https://www.mozilla.org/fr/firefox/developer/)
