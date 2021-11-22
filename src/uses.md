@@ -25,7 +25,7 @@ Inspired by Wes Bos and his [uses.tech](https://uses.tech/) website.
 * [Visual Studio](https://visualstudio.microsoft.com/vs/)
 * [Visual Studio Code](https://code.visualstudio.com/)
 * [Notepad++](https://notepad-plus-plus.org/)
-* [Powershell Core](https://github.com/powershell/powershell) with [posh-git](https://github.com/dahlbyk/posh-git), [oh-my-posh](https://ohmyposh.dev/) and [PSReadLine](https://github.com/PowerShell/PSReadLine)
+* [Powershell Core](https://github.com/powershell/powershell) with [posh-git](https://github.com/dahlbyk/posh-git), [oh-my-posh](https://ohmyposh.dev/), [PSReadLine](https://github.com/PowerShell/PSReadLine) and [Terminal-Icons](https://github.com/devblackops/Terminal-Icons)
 * [GitHub Desktop](https://desktop.github.com/)
 * [Paint.net](https://www.getpaint.net/)
 * [Firefox Developer Edition](https://www.mozilla.org/fr/firefox/developer/)
