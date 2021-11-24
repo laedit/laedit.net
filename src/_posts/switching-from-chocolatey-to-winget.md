@@ -4,7 +4,7 @@ title: Switching from Chocolatey to Winget
 comments: true
 tags: [chocolatey, winget, boxstarter, powershell]
 date: 2021-11-24
-tweet_id: 
+tweet_id: 1463400285561360387
 ---
 
 Around every 2-3 years I reinstall my computer with a fresh Windows.  
