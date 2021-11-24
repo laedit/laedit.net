@@ -1,3 +1,5 @@
+image: Visual Studio 2019
+
 version: 1.0.{build}
 
 environment:
@@ -9,8 +11,8 @@ environment:
 install:
   - cup pretzel -y
   - cup pretzel.scriptcs -y
-  - ps: $env:Path += ";C:\\Python35;C:\\Python35\\Scripts"
-  - pip install creep
+  - ps: $env:Path += ";C:\\Python310;C:\\Python310\\Scripts"
+  - C:\Python310\python.exe -m pip install creep
 
 cache:
   - C:\ProgramData\chocolatey\bin -> appveyor.yml
