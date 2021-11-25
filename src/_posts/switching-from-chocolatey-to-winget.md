@@ -90,7 +90,7 @@ Same for zip files:
 ``` powershell
 function UnzipFromWeb ($url) {
     $downloadPath = Download $url
-    $targetDir = "$env:USERPROFILE\Downloads\$(Get-ChildItem $downloadPath | Select-Object -ExpandProperty BaseName)"
+    $targetDir = "$env:USERPROFILE\Downloads\$((Get-ChildItem $downloadPath).BaseName)"
     Expand-Archive $downloadPath -DestinationPath $targetDir -Force
     Remove-Item $downloadPath
     return $targetDir
