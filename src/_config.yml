@@ -8,7 +8,7 @@ exclude: [LICENSE, README.md, .git]
 author: Jérémie Bertrand
 title: laedit
 subtitle: Jérémie Bertrand
-url: http://laedit.net
+url: https://laedit.net
 contact: contact@laedit.net
 #permalink: /:categories/:year/:month/:day/:title/index.html
 
