@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Switching from Hubic to BlobBackup
-comments: false
+comments: true
 tags: [hubic, blobbackup, backup, settings]
 date: 2021-11-28
-tweet_id: 
+tweet_id: 1464896453457981446
 ---
 
 It's important to do backups.  
