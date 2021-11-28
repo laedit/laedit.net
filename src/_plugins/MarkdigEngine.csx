@@ -1,4 +1,4 @@
-#r Markdig.dll
+#r "Markdig.dll"
 
 using Markdig;
 
