@@ -19,6 +19,7 @@ I have a hard drive with the OS and softwares and another drive with the data to
 The idea was just to copy the settings of certain softwares I use in order to be able to restore them after a fresh install of Windows.  
 I have written a quick powershell script (I'm tempted to make it a more robust application):
 ```powershell
+#Requires -RunAsAdministrator
 $ErrorActionPreference = "Stop"
 Add-Type -AssemblyName System.Windows.Forms
 $dataFolder = "D:\Backup\Data"
@@ -44,10 +45,6 @@ function DeleteDir([string] $dirName) {
     if (Test-Path "$dataFolder\$dirName") {
         Remove-Item -path "$dataFolder\$dirName" -recurse -force
     }
-}
-
-if (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)) {
-    throw 'This script needs to be run as administrator'
 }
 
 try {
@@ -107,6 +104,7 @@ catch {
     Read-Host -Prompt 'Press enter to close'
 }
 ```
+*Edit: Thanks to [Loïc Wolff](https://twitter.com/loicwolff) the administrator check has been simplified with a `#requires`*  
 It requires to be launched as administrator to be able to stop and restart the [Jellyfin](https://jellyfin.org/) service, it copies the settings of various softwares in a specific folder and raise a notification ([Thanks to Boe Prox](https://mcpmag.com/articles/2017/09/07/creating-a-balloon-tip-notification-using-powershell.aspx)), alerting me if an error showed.
 
 A scheduled task allows me to run it every day:
