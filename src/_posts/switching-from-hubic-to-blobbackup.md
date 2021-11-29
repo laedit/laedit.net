@@ -24,10 +24,10 @@ $ErrorActionPreference = "Stop"
 Add-Type -AssemblyName System.Windows.Forms
 $dataFolder = "D:\Backup\Data"
 
+$balloon = New-Object System.Windows.Forms.NotifyIcon
+$balloon.Icon = [System.Drawing.Icon]::ExtractAssociatedIcon((Get-Process -id $pid).Path)
+
 function ToastNotification([string] $message, [System.Windows.Forms.ToolTipIcon] $icon) {
-    $balloon = New-Object System.Windows.Forms.NotifyIcon
-    $path = (Get-Process -id $pid).Path
-    $balloon.Icon = [System.Drawing.Icon]::ExtractAssociatedIcon($path)
     $balloon.BalloonTipIcon = $icon
     $balloon.BalloonTipText = $message
     $balloon.BalloonTipTitle = $message
@@ -104,7 +104,7 @@ catch {
     Read-Host -Prompt 'Press enter to close'
 }
 ```
-*Edit: Thanks to [Loïc Wolff](https://twitter.com/loicwolff) the administrator check has been simplified with a `#requires`*  
+*Edit: Thanks to [Loïc Wolff](https://twitter.com/loicwolff) the administrator check has been simplified with a `#requires` and the notifications are now grouped together.*  
 It requires to be launched as administrator to be able to stop and restart the [Jellyfin](https://jellyfin.org/) service, it copies the settings of various softwares in a specific folder and raise a notification ([Thanks to Boe Prox](https://mcpmag.com/articles/2017/09/07/creating-a-balloon-tip-notification-using-powershell.aspx)), alerting me if an error showed.
 
 A scheduled task allows me to run it every day:
