@@ -83,8 +83,7 @@ try {
     # BlobBackup
     Write-Host 'Backup BlobBackup' -ForegroundColor DarkGreen
     CreateBackupDir 'BlobBackup'
-    Copy-Item -Path "$env:USERPROFILE\.blobbackup\config" -Destination "$dataFolder\BlobBackup"
-    Copy-Item -Path "$env:USERPROFILE\.blobbackup\settings" -Destination "$dataFolder\BlobBackup"
+    Copy-Item -Path "$env:USERPROFILE\.blobbackup\*" -Destination "$dataFolder\BlobBackup\"
 
     # Notepad++
     Write-Host 'Backup Notepad++' -ForegroundColor DarkGreen
