@@ -12,9 +12,6 @@ url: https://laedit.net
 contact: contact@laedit.net
 #permalink: /:categories/:year/:month/:day/:title/index.html
 
-# Google Analytics
-google_analytics_tracking_id: UA-6626755-4
-
 # defaults:
 #   -
 #     scope:
