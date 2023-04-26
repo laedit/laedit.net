@@ -4,6 +4,7 @@ title: about
 comments: false
 permalink: /about/
 sitemap: true
+third_libraries: [font-awesome]
 ---
 
 ## Me
@@ -14,15 +15,14 @@ I am mostly a .net guy but I am interested in every technology.
 And I love [to read 🇫🇷](https://readinglist.laedit.net/).
 
 <div id="links">
-<a href="https://twitter.com/laedit" title="Twitter" class="twitter"><i class="fa fa-twitter fa-lg fa-fw"></i></a>
-<a href="https://stackoverflow.com/users/424072/j%C3%A9r%C3%A9mie-bertrand" title="Stackoverflow" class="stack"><i class="fa fa-stack-overflow fa-lg fa-fw"></i></a>
-<a href="https://github.com/laedit" title="Github"><i class="fa fa-github fa-lg fa-fw"></i></a>
-<a href="https://www.codeplex.com/site/users/view/laedit" title="Codeplex" class="icomoon"><i class="icon-codeplex"></i></a>
-<a href="https://careers.stackoverflow.com/jeremiebertrand" title="Stackoverflow Careers" class="stack"><i class="fa fa-signal fa-lg fa-fw"></i></a>
-<a href="https://fr.viadeo.com/fr/profile/jeremie.bertrand" title="Viadeo" class="viadeo icomoon"><i class="icon-viadeo"></i></a>
-<a href="https://linkedin.com/in/jérémie-bertrand-902071129" title="Linkedin"><i class="fa fa-linkedin fa-lg fa-fw"></i></a>
-<a href="mailto:contact@laedit.net" title="Mail"><i class="fa fa-envelope-o fa-lg fa-fw"></i></a>
-<a href="/laedit.pubkey.asc" title="Public PGP Key"><i class="fa fa-key fa-lg fa-fw"></i></a>
+<a href="https://twitter.com/laedit" title="Twitter" class="twitter"><i class="fa-brands fa-twitter fa-lg"></i></a>
+<a href="https://piaille.fr/@laedit" title="Mastodon" class="mastodon"><i class="fa-brands fa-mastodon fa-lg"></i></a>
+<a href="https://stackoverflow.com/users/424072/j%C3%A9r%C3%A9mie-bertrand" title="Stackoverflow" class="stack"><i class="fa-brands fa-stack-overflow fa-lg"></i></a>
+<a href="https://github.com/laedit" title="Github"><i class="fa-brands fa-github fa-lg fa-fw"></i></a>
+<a href="https://careers.stackoverflow.com/jeremiebertrand" title="Stackoverflow Careers" class="stack"><i class="fa-solid fa-signal"></i></a>
+<a href="https://linkedin.com/in/jérémie-bertrand-902071129" title="Linkedin"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+<a href="mailto:contact@laedit.net" title="Mail"><i class="fa-solid fa-envelope fa-lg"></i></a>
+<a href="/laedit.pubkey.asc" title="Public PGP Key"><i class="fa-solid fa-key fa-lg"></i></a>
 </div>
 <br />
 <br />
