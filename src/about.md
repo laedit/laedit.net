@@ -9,7 +9,7 @@ third_libraries: [font-awesome]
 
 ## Me
 My name is Jérémie Bertrand, living in Strasbourg, France.  
-I am a software developer currently working for Euro-Information and member of the [fier d'être développeur](http://fierdetredeveloppeur.org/) (proud to be developer) association.  
+I am a software developer currently working for Euro-Information.  
 My English can be very clumsy so please forgive me, or better: [edit me](https://github.com/laedit/laedit.net).  
 I am mostly a .net guy but I am interested in every technology.  
 And I love [to read 🇫🇷](https://readinglist.laedit.net/).
