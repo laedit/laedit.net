@@ -116,8 +116,8 @@ enum Icon {
 # https://thenounproject.com/icon/error-1156903/
 # https://thenounproject.com/icon/info-1156901/
 $icons = @{
-    [Icon]::Info = ".\info.png";
-    [Icon]::Error = ".\error.png"
+    [Icon]::Info = "$PSScriptRoot\info.png";
+    [Icon]::Error = "$PSScriptRoot\error.png"
 }
 
 function Pop-Toast([string] $title, [string] $message, [Icon] $icon)
