@@ -15,9 +15,9 @@ Inspired by Wes Bos and his [uses.tech](https://uses.tech/) website.
     - 16GB DDR4 RAM
     - NVIDIA GeForce GTX 1070
     - SSD 120 GB / SSD 500 GB / HDD 2TB / HDD 6TB
-    - Samsung S23C350 23.1" / Samsung SyncMaster 22.3"
-    - Windows 10 Pro
-* Microsoft Lumia 532 / Windows 10 Mobile
+    - Acer XV242Y 23.8" / Samsung S23C350 23.1"
+    - Windows 11 Pro
+* Teracube 2e / /e/OS
 * Librem 5 (waiting) / PureOS
 
 ## Software
@@ -26,7 +26,6 @@ Inspired by Wes Bos and his [uses.tech](https://uses.tech/) website.
 * [Visual Studio Code](https://code.visualstudio.com/)
 * [Notepad++](https://notepad-plus-plus.org/)
 * [Powershell Core](https://github.com/powershell/powershell) with [posh-git](https://github.com/dahlbyk/posh-git), [oh-my-posh](https://ohmyposh.dev/), [PSReadLine](https://github.com/PowerShell/PSReadLine) and [Terminal-Icons](https://github.com/devblackops/Terminal-Icons)
-* [GitHub Desktop](https://desktop.github.com/)
 * [Paint.net](https://www.getpaint.net/)
 * [Firefox Developer Edition](https://www.mozilla.org/fr/firefox/developer/)
 * [Thunderbird](https://www.thunderbird.net/)
