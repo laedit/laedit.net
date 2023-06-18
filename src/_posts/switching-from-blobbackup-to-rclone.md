@@ -4,8 +4,8 @@ title: Switching from BlobBackup to rclone
 comments: true
 tags: [blobbackup, rclone, veracrypt, backup, settings]
 date: 2023-06-18
-tweet_id: 
-mastodon_id: 
+tweet_id: 1670355616890511360
+mastodon_id: 110564398385024030
 ---
 
 In the [previous post]({% post_url switching-from-hubic-to-blobbackup %}) I used [BlobBackup](https://blobbackup.com/) to sync my backup data to a cloud storage and an external drive. Since then the original client hasn't been updated and an account is now mandatory to download and use it. Even if the offer is attractive I didn't want to change my cloud backup location and prefer to know where my data is stored.
