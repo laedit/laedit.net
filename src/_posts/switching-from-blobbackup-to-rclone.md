@@ -90,7 +90,7 @@ function Get-KasullRemote {
 
     while ($null -eq $kasullLetter) {
         Write-Host 'Please insert Kasull, mount it in veracrypt and press a key' -ForegroundColor DarkGreen
-        $host.ui.RawUI.ReadKey("NoEcho,IncludeKeyDown")
+        $null = $host.ui.RawUI.ReadKey("NoEcho,IncludeKeyDown")
         $kasullLetter = Get-DriveLetter 'kasull'
     }
 
