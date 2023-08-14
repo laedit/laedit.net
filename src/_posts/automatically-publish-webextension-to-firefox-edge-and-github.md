@@ -4,8 +4,8 @@ title: Automatically publish a webextension to Firefox, Edge and GitHub
 comments: true
 tags: [webextension, firefox, edge, github]
 date: 2023-08-14
-# tweet_id: 
-# mastodon_id: 
+tweet_id: 1691012835839471616
+mastodon_id: 110887169472575116
 ---
 
 I wanted to automatically publish my webextension [New Tab - Moment](https://github.com/laedit/new-tab-moment) for some time but the lack of possibilities to specify the release notes has stopped me so far.
