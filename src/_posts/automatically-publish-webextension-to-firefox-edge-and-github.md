@@ -65,7 +65,7 @@ For the details I leave you to my "to be improved" [package.json](https://github
 After that the `package` script calls [`web-ext build`](https://extensionworkshop.com/documentation/develop/web-ext-command-reference/#web-ext-build) and [`web-ext lint`](https://extensionworkshop.com/documentation/develop/web-ext-command-reference/#web-ext-lint) for each browser folder.
 
 After the build, the release to Firefox action creates the version metadata containing the release notes then signs the webextension on the Mozilla's addons website and finally uploads the resulting .xpi on the build's artefacts:
-
+{% raw %}
 ```yml
   - name: Extract release notes
     id: extract-release-notes
@@ -94,7 +94,7 @@ After the build, the release to Firefox action creates the version metadata cont
   outputs:
     release_notes: ${{ steps.extract-release-notes.outputs.release_notes }}
 ```
-
+{% endraw %}
 The first two steps focuses on the version metadata: first the release notes of the last version is extracted thanks to [ffurrer2's github action](https://github.com/ffurrer2/extract-release-notes/) then it is inserted in the json file of the version metadata.
 
 Then the [`web-ext sign`](https://extensionworkshop.com/documentation/develop/web-ext-command-reference/#web-ext-sign) command of the well-known webextension tool [web-ext](https://extensionworkshop.com/documentation/develop/getting-started-with-web-ext/) to upload the webextension to [AMO](https://addons.mozilla.org/), sign it and publish it if all went well.  
@@ -102,7 +102,7 @@ The argument `--amo-metadata [metadata file path]` (which has to be used with `-
 
 ### Release to GitHub
 The GitHub release runs after the firefox one. It downloads the artifacts uploaded by the previous jobs and creates a new GitHub release with them and the release notes through the [softprops/action-gh-release](https://github.com/softprops/action-gh-release) action.
-
+{% raw %}
 ```yml
 release-github:
   needs: [release-firefox]
@@ -123,12 +123,12 @@ release-github:
           artifact/new_tab_-_moment-${{ github.ref_name }}.*.zip
           artifact/new_tab_moment-${{ github.ref_name }}.xpi
 ```
-
+{% endraw %}
 Note that a [GitHub access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) is needed.
 
 ### Release to Edge
 The Edge release also runs after the firefox one, in parallel of the GitHub release. It downloads the artifacts uploaded by the previous jobs and submit the edge zip as a new version of the edge addon through the [wdzeng/edge-addon](https://github.com/wdzeng/edge-addon) action.
-
+{% raw %}
 ```yml
 release-edge:
   needs: [release-firefox]
@@ -142,7 +142,7 @@ release-edge:
         zip-path: artifact/new_tab_-_moment-${{ github.ref_name }}.edge.zip
         client-id: ${{ secrets.EDGE_CLIENT }}
         client-secret: ${{ secrets.EDGE_SECRET }}
-        access-token-url: ${{ secrets.EDGE_TOKEN_URL }}
+        access-token-url: $`{{ secrets.EDGE_TOKEN_URL }}`
 ```
-
+{% endraw %}
 And here you go, it is not perfect but largely sufficient for my little addon and maybe yours.
