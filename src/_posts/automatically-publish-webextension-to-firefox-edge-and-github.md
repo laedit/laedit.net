@@ -142,7 +142,7 @@ release-edge:
         zip-path: artifact/new_tab_-_moment-${{ github.ref_name }}.edge.zip
         client-id: ${{ secrets.EDGE_CLIENT }}
         client-secret: ${{ secrets.EDGE_SECRET }}
-        access-token-url: $`{{ secrets.EDGE_TOKEN_URL }}`
+        access-token-url: ${{ secrets.EDGE_TOKEN_URL }}
 ```
 {% endraw %}
 And here you go, it is not perfect but largely sufficient for my little addon and maybe yours.
