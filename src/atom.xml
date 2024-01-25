@@ -12,7 +12,6 @@ permalink: /atom/index.xml
   <id>{{ site.url }}/</id>
   <author>
     <name>{{ site.author }}</name>
-    <email>{{ site.contact }}</email>
   </author>
 
   {% for post in site.posts %}
