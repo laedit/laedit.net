@@ -3,7 +3,6 @@ layout: post
 title: migrating the old reader bookmark from addon sdk to webextensions
 tags: [firefox addon SDK, webextensions]
 date: 2016-06-27
-tweet_id: 747306054011097088
 comments: true
 ---
 

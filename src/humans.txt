@@ -4,7 +4,6 @@ layout:
 /* TEAM */
 Developer: {{ site.author }}
 Site: {{ site.url }}
-Twitter: laedit
 Mastodon: @laedit@piaille.fr
 Location: Strasbourg, France
 

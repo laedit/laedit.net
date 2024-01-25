@@ -4,7 +4,6 @@ title: Commit to GitHub with Octokit.net
 comments: true
 tags: [github, octokit-net]
 date: 2016-11-12
-tweet_id: 797456352268455936
 ---
 
 #### GitHub api & Octokit.net

@@ -4,7 +4,6 @@ title: Switching from BlobBackup to rclone
 comments: true
 tags: [blobbackup, rclone, veracrypt, backup, settings]
 date: 2023-06-18
-tweet_id: 1670355616890511360
 mastodon_id: 110564398385024030
 ---
 

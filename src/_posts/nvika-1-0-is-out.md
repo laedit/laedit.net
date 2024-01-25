@@ -5,7 +5,6 @@ comments: true
 tags: [nvika, projects]
 date: 2016-10-01
 third_libraries: [gifffer]
-tweet_id: 782279743488004096
 ---
 
 ![nvika icon](/resources/nvika-1-0-is-out/nvika-icon.png) After a while, [NVika](https://github.com/laedit/vika) is finally out of beta.

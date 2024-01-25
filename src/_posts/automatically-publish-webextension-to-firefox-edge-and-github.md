@@ -4,7 +4,6 @@ title: Automatically publish a webextension to Firefox, Edge and GitHub
 comments: true
 tags: [webextension, firefox, edge, github]
 date: 2023-08-14
-tweet_id: 1691012835839471616
 mastodon_id: 110887169472575116
 ---
 

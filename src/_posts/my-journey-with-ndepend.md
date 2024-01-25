@@ -4,7 +4,6 @@ title: My journey with NDepend
 comments: true
 tags: [ndepend, wpf, xaml]
 date: 2017-05-16
-tweet_id: 864376719960092672
 ---
 
 **Disclaimer**: I was offered a 1 year NDepend pro license by [Patrick Smacchia](https://blog.ndepend.com/author/psmacchia/) (NDepend creator) so I could use it and share my experience if I wanted to.  

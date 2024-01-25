@@ -3,7 +3,6 @@ layout: post
 title: integrate pretzel with appveyor
 tags: [pretzel, appveyor]
 date: 2016-06-14
-tweet_id: 742956948698583040
 comments: true
 ---
 

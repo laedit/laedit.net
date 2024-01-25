@@ -4,7 +4,6 @@ title: Switching from Hubic to BlobBackup
 comments: true
 tags: [hubic, blobbackup, backup, settings]
 date: 2021-11-28
-tweet_id: 1464896453457981446
 ---
 
 It's important to do backups.  
@@ -103,7 +102,7 @@ catch {
     Read-Host -Prompt 'Press enter to close'
 }
 ```
-*Edit: Thanks to [Loïc Wolff](https://twitter.com/loicwolff) the administrator check has been simplified with a `#requires` and the notifications are now grouped together.*  
+*Edit: Thanks to [Loïc Wolff](https://hachyderm.io/@loicwolff) the administrator check has been simplified with a `#requires` and the notifications are now grouped together.*  
 It requires to be launched as administrator to be able to stop and restart the [Jellyfin](https://jellyfin.org/) service, it copies the settings of various softwares in a specific folder and raise a notification ([Thanks to Boe Prox](https://mcpmag.com/articles/2017/09/07/creating-a-balloon-tip-notification-using-powershell.aspx)), alerting me if an error showed.  
 *Edit 2: Since then I discovered that the notifications do not stay in the notification center of Windows 11 so I switched to [BurntToast](https://github.com/Windos/BurntToast/):*
 ```powershell
