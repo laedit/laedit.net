@@ -18,8 +18,6 @@ And I love [to read 🇫🇷](https://readinglist.laedit.net/).
 <a href="https://piaille.fr/@laedit" title="Mastodon" class="mastodon"><i class="fa-brands fa-mastodon fa-lg"></i></a>
 <a href="https://stackoverflow.com/users/424072/j%C3%A9r%C3%A9mie-bertrand" title="Stackoverflow" class="stack"><i class="fa-brands fa-stack-overflow fa-lg"></i></a>
 <a href="https://github.com/laedit" title="Github"><i class="fa-brands fa-github fa-lg fa-fw"></i></a>
-<a href="https://careers.stackoverflow.com/jeremiebertrand" title="Stackoverflow Careers" class="stack"><i class="fa-solid fa-signal"></i></a>
-<a href="https://linkedin.com/in/jérémie-bertrand-902071129" title="Linkedin"><i class="fa-brands fa-linkedin fa-lg"></i></a>
 <a href="javascript:window.location.href = 'mailto:' + ['contact','laedit.net'].join('@')" title="Mail"><i class="fa-solid fa-envelope fa-lg"></i></a>
 <a href="/laedit.pubkey.asc" title="Public PGP Key"><i class="fa-solid fa-key fa-lg"></i></a>
 </div>
