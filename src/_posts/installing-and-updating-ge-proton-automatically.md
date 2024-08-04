@@ -95,7 +95,7 @@ run-parts --verbose /etc/cron.weekly
 Happy gaming!
 
 Sources:
-- https://github.com/GloriousEggroll/proton-ge-custom
-- https://github.com/ValveSoftware/Proton
-- https://stackoverflow.com/a/29509403/424072
-- https://stackoverflow.com/a/18878111/424072
+- <https://github.com/GloriousEggroll/proton-ge-custom>
+- <https://github.com/ValveSoftware/Proton>
+- <https://stackoverflow.com/a/29509403/424072>
+- <https://stackoverflow.com/a/18878111/424072>
