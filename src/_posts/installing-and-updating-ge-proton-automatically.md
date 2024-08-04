@@ -3,7 +3,7 @@ layout: post
 title: Installing and updating GE-Proton automatically
 comments: true
 tags: [linux, steam, proton, flatpak]
-date: 2024-08-02
+date: 2024-08-04
 mastodon_id: 
 ---
 
