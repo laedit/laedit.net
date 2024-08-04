@@ -4,7 +4,7 @@ title: Installing and updating GE-Proton automatically
 comments: true
 tags: [linux, steam, proton, flatpak]
 date: 2024-08-04
-mastodon_id: 
+mastodon_id: 112902680148957196
 ---
 
 I recently switched from Windows to Linux, [Pop!_OS](https://pop.system76.com/) specificatlly, (and still in the process if I'm being honest) and one of my concerns was about running games since it is one of the things I do most.  
