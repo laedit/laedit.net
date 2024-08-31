@@ -18,10 +18,11 @@ There is many ways to install it (like an [asdf plugin](https://github.com/augus
 # Update GE Proton
 set -euo pipefail
 
+currentUser=$(logname)
 githubReleaseUrl="https://api.github.com/repos/GloriousEggroll/proton-ge-custom/releases/latest"
 compatibilityToolsDir=compatibilitytools.d/
-steamNativeDir=~/.steam/root/
-steamFlatpakDir=~/.var/app/com.valvesoftware.Steam/data/Steam/
+steamNativeDir=/home/$currentUser/.steam/root/
+steamFlatpakDir=/home/$currentUser/.var/app/com.valvesoftware.Steam/data/Steam/
 tmpDir=/tmp/proton-ge-custom
 
 if [ -d "$steamNativeDir" ]; then
@@ -30,6 +31,9 @@ elif [ -d "$steamFlatpakDir" ]; then
   dir="$steamFlatpakDir$compatibilityToolsDir"
 else
   echo "steam not installed or installation not supported"
+  echo "folders searched:"
+  echo "- $steamNativeDir$compatibilityToolsDir"
+  echo "- $steamFlatpakDir$compatibilityToolsDir"
   exit 1
 fi
 
