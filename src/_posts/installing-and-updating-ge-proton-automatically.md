@@ -18,7 +18,7 @@ There is many ways to install it (like an [asdf plugin](https://github.com/augus
 # Update GE Proton
 set -euo pipefail
 
-currentUser=$(logname)
+currentUser=$(users)
 githubReleaseUrl="https://api.github.com/repos/GloriousEggroll/proton-ge-custom/releases/latest"
 compatibilityToolsDir=compatibilitytools.d/
 steamNativeDir=/home/$currentUser/.steam/root/
@@ -75,6 +75,7 @@ rm -r $tmpDir
 
 echo "version $version installed"
 ```
+Edit 2024-09-07: use `users` instead of `logname` to get the logged in user during a cron job.
 
 There is no deletion of the previous versions because they can still be configured on steam to be used for some installed games.{.info}
 
