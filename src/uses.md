@@ -22,7 +22,7 @@ Inspired by Wes Bos and his [uses.tech](https://uses.tech/) website.
 
 ## Software
 
-* [Visual Studio Code](https://code.visualstudio.com/) / [VSCodium](https://vscodium.com/)
+* [Zed](https://zed.dev/) / [Visual Studio Code](https://code.visualstudio.com/) / [VSCodium](https://vscodium.com/)
 * [Fish](https://fishshell.com/) on [Alacritty](https://alacritty.org/)
 * [GIMP](https://www.gimp.org/)
 * [Firefox](https://www.mozilla.org/fr/firefox/)

@@ -11,13 +11,15 @@ third_libraries: [font-awesome]
 My name is Jérémie Bertrand, living in Strasbourg, France.  
 I am a software developer currently working for Euro-Information.  
 My English can be very clumsy so please forgive me, or better: [edit me](https://github.com/laedit/laedit.net).  
-I am mostly a .net guy but I am interested in every technology.  
-And I love [to read 🇫🇷](https://readinglist.laedit.net/).
+I am mostly a .net guy but interested in technologies in general.  
+And I love [to read 🇫🇷](https://readinglist.laedit.net/).  
+Some of my [recommendations 🇫🇷](https://reco.laedit.net).
 
 <div id="links">
 <a href="https://piaille.fr/@laedit" title="Mastodon" class="mastodon"><i class="fa-brands fa-mastodon fa-lg"></i></a>
 <a href="https://stackoverflow.com/users/424072/j%C3%A9r%C3%A9mie-bertrand" title="Stackoverflow" class="stack"><i class="fa-brands fa-stack-overflow fa-lg"></i></a>
 <a href="https://github.com/laedit" title="Github"><i class="fa-brands fa-github fa-lg fa-fw"></i></a>
+<a href="https://sr.ht/~laedit/" title="Sourcehut"><i class="fa-regular fa-circle fa-lg"></i></a>
 <a href="javascript:window.location.href = 'mailto:' + ['contact','laedit.net'].join('@')" title="Mail"><i class="fa-solid fa-envelope fa-lg"></i></a>
 <a href="/laedit.pubkey.asc" title="Public PGP Key"><i class="fa-solid fa-key fa-lg"></i></a>
 </div>
