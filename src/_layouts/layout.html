@@ -1,65 +1,67 @@
-<!DOCTYPE html>
+<!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <meta name="author" content="Jérémie Bertrand" />
+        <meta name="fediverse:creator" content="@laedit@piaille.fr" />
 
-		<title>{{ page.title }} {% if page.title != site.title %}&ndash; {{ site.title }}{% endif %}</title>
+        <title>{{ page.title }} {% if page.title != site.title %}&ndash; {{ site.title }}{% endif %}</title>
 
-		<link rel="shortcut icon" href="/favicon.ico" />
-		<link href="/rss/" type="application/rss+xml" rel="alternate" title="RSS Blog Feed" />
-		<link href="/atom/" type="application/atom+xml" rel="alternate" title="ATOM Blog Feed" />
-		<link href="https://piaille.fr/@laedit" rel="me" >
-                <meta name="author" content="Jérémie Bertrand" />
-		<meta name="fediverse:creator" content="@laedit@piaille.fr">
-		<link rel="stylesheet" type="text/css" href="/css/style.css" />
-		<link rel="stylesheet" type="text/css" href="/css/prism.css" />
-		{% if page.third_libraries contains "font-awesome" %}<link rel="stylesheet" type="text/css" href="/css/fontawesome.css" />
-		<link rel="stylesheet" type="text/css" href="/css/brands.css" />
-		<link rel="stylesheet" type="text/css" href="/css/solid.css" />{% endif %}
-		<script src="/scripts/prism.js"></script>
-		{% if page.third_libraries contains "gifffer" %}<script src="/scripts/gifffer.min.js"></script>
-		<script type="text/javascript">
-			window.onload = function() {
-				Gifffer({
-					playButtonStyles: {
-						'width': '60px',
-						'height': '60px',
-						'border-radius': '30px',
-						'background': 'rgba(255, 255, 255)',
-						'position': 'absolute',
-						'top': '50%',
-						'left': '50%',
-						'margin': '-30px 0 0 -30px'
-					}
-				});
-			}
-		</script>{% endif %}
-	</head>
-	<body>
-		<header>
-			<a href="/">{{ site.title }}</a>
-			<span class="subtitle">{{ site.subtitle }}</span>
-		</header>
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="me" href="https://piaille.fr/@laedit" />
+        <link rel="alternate" type="application/rss+xml" href="/rss/" title="RSS Blog Feed" />
+        <link rel="alternate" type="application/atom+xml" href="/atom/" title="ATOM Blog Feed" />
+        <link rel="stylesheet" type="text/css" href="/css/style.css" />
+        <link rel="stylesheet" type="text/css" href="/css/prism.css" />
+        {% if page.third_libraries contains "font-awesome" %}<link rel="stylesheet" type="text/css" href="/css/fontawesome.css" />
+        <link rel="stylesheet" type="text/css" href="/css/brands.css" />
+        <link rel="stylesheet" type="text/css" href="/css/regular.css" />
+        <link rel="stylesheet" type="text/css" href="/css/solid.css" />{% endif %}
+        <script src="/scripts/prism.js"></script>
+        {% if page.third_libraries contains "gifffer" %}<script src="/scripts/gifffer.min.js"></script>
+        <script type="text/javascript">
+            window.onload = function () {
+                Gifffer({
+                    playButtonStyles: {
+                        width: "60px",
+                        height: "60px",
+                        "border-radius": "30px",
+                        background: "rgba(255, 255, 255)",
+                        position: "absolute",
+                        top: "50%",
+                        left: "50%",
+                        margin: "-30px 0 0 -30px",
+                    },
+                });
+            };
+        </script>{% endif %}
+    </head>
+    <body>
+        <header>
+            <a href="/">{{ site.title }}</a>
+            <span class="subtitle">{{ site.subtitle }}</span>
+        </header>
 
-		<nav>
-			<ul>
-				<li><a href="/" class="{% if page.id == '/' %}active{% endif %} tile quarter limebg">Blog</a></li>
-				{% comment %}
-				<li><a href="/projects/" class="{% if page.id == '/projects/' %}active{% endif %} tile quarter bluebg">Projects</a></li>
-				{% endcomment %}
-				<li><a href="/about/" class="{% if page.id == '/about/' %}active{% endif %} tile quarter limebg">About</a></li>
-				<li><a href="/uses/" class="{% if page.id == '/uses/' %}active{% endif %} tile quarter limebg">Uses</a></li>
-			</ul>
-		</nav>
-		<main>
-				{{ content }}
-		</main>
+        <nav>
+            <ul>
+                <li><a href="/" class="{% if page.id == '/' %}active{% endif %} tile quarter limebg">Blog</a></li>
+                {% comment %}
+                <li><a href="/projects/" class="{% if page.id == '/projects/' %}active{% endif %} tile quarter bluebg">Projects</a></li>
+                {% endcomment %}
+                <li><a href="/about/" class="{% if page.id == '/about/' %}active{% endif %} tile quarter limebg">About</a></li>
+                <li><a href="/uses/" class="{% if page.id == '/uses/' %}active{% endif %} tile quarter limebg">Uses</a></li>
+            </ul>
+        </nav>
+        <main>
+            {{ content }}
+        </main>
 
-		<footer>
-			&copy; {{ site.time | date: "%Y" }} &ndash; {{ site.author }}
-			| Built using <a href="http://code52.org/pretzel">Pretzel</a> and <a href="http://code52.org/metro.css">metro.css</a>
-			| <a href="/rss/">RSS</a>
-		</footer>
-	</body>
+        <footer>
+            &copy; {{ site.time | date: "%Y" }} &ndash; {{ site.author }} |
+            Built using <a href="http://code52.org/pretzel">Pretzel</a> and <a href="http://code52.org/metro.css">metro.css</a> |
+            <a href="https://github.com/laedit/laedit.net">Sources</a> |
+            <a href="/rss/">RSS</a>
+        </footer>
+    </body>
 </html>
