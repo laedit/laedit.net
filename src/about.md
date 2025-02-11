@@ -20,7 +20,7 @@ Some of my [recommendations 🇫🇷](https://reco.laedit.net).
 <a href="https://stackoverflow.com/users/424072/j%C3%A9r%C3%A9mie-bertrand" title="Stackoverflow" class="stack"><i class="fa-brands fa-stack-overflow fa-lg"></i></a>
 <a href="https://github.com/laedit" title="Github"><i class="fa-brands fa-github fa-lg fa-fw"></i></a>
 <a href="https://sr.ht/~laedit/" title="Sourcehut"><i class="fa-regular fa-circle fa-lg"></i></a>
-<a href="javascript:window.location.href = 'mailto:' + ['contact','laedit.net'].join('@')" title="Mail"><i class="fa-solid fa-envelope fa-lg"></i></a>
+<a href="#" onclick="this.href = 'mailto:' + ['contact','laedit.net'].join('@')" title="Mail"><i class="fa-solid fa-envelope fa-lg"></i></a>
 <a href="/laedit.pubkey.asc" title="Public PGP Key"><i class="fa-solid fa-key fa-lg"></i></a>
 </div>
 <br />
