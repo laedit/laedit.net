@@ -4,13 +4,14 @@ title: Webhook creation on SourceHut
 comments: true
 tags: [sourcehut, webhook]
 date: 2025-02-18
+mastodon_id: 114024127180677694
 ---
 
 I am now using [SourceHut](https://sourcehut.org/) to host the sources of some of my projects and wanted to deploy a static HTML page to my web host [Ikoula](https://www.ikoula.com).  
 On my shared server, [Plesk](https://www.plesk.com/) is used to configure the websites and has a git option which allows to `git pull` from a source to the website folder for each `git push`, if the source emits a web hook.  
-Sourcehut doesn't have a GUI to add de git web hook so you have to use their API. There is one [dedicated to git](https://man.sr.ht/git.sr.ht/api.md) but it is being replaced by the [GraphQL API one](https://man.sr.ht/git.sr.ht/graphql.md).
+Sourcehut doesn't have a GUI to add de git web hook so you have to use their API. There is one [dedicated to git](https://man.sr.ht/git.sr.ht/api.md) but it is being replaced by the [GraphQL API one](https://man.sr.ht/git.sr.ht/graphql.md).  
+The git graphql api have their own [playground](https://git.sr.ht/graphql) but the [documentation](https://man.sr.ht/graphql.md) is global.
 
-The git graphql api have their own [playground](https://git.sr.ht/graphql) but the [documentation](https://man.sr.ht/graphql.md) is global.  
 To this day the api is still hunder development, it has the special version 0.0.0 which indicates that an API which is still undergoing its initial design work, and provides no stability guarantees whatsoever. {.warning}
 
 So now for the web hook creation, there is a [CLI tool for sr.ht](https://git.sr.ht/~xenrox/hut) but I used [`curl`](https://curl.se/) to consume the graphql apis.  
