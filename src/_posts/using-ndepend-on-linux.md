@@ -4,7 +4,7 @@ title: Using NDepend on Linux
 comments: true
 tags: [ndepend, linux]
 date: 2025-04-09
-mastodon_id: 
+mastodon_id: 114306038060291761
 ---
 
 **Disclaimer**: Like [the last time][my-journey-with-ndepend] I was offered a 1 year NDepend pro license by [Patrick Smacchia][psmacchia] (NDepend creator) so I could use it and share my experience if I wanted to.  
