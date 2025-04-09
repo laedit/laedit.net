@@ -115,7 +115,7 @@ I am glad to see it working well on linux, including the generation of all the r
 There are just 3 things that can be improved :
 - like [Nadir Badnjevic][Nadir-potential-enhancement] I believe that the installation and usage can be simplified on Linux/MacOS
 - `JustMyCode` rules needs to be updated to include the new `CompilerGenerated` attribute
-- many tools are missing to help creates rules
+- tools are missing to help creates rules on Linux since a lot of NDepend tools are available only for Visual Studio
 
 [Nadir-potential-enhancement]: https://nadirbad.dev/how-to-setup-and-use-ndepend-on-macos-for-net-development#heading-potential-enhancement
 
