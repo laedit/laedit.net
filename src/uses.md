@@ -11,6 +11,7 @@ Inspired by Wes Bos and his [uses.tech](https://uses.tech/) website.
 ## Hardware
 
 * Custom Built Desktop PC
+    - ASUS STRIX B365-FG
     - Intel i5 9600KF
     - 16GB DDR4 RAM
     - NVIDIA GeForce GTX 1070
