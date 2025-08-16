@@ -22,10 +22,12 @@ So the last part was to edit the labels and print them. I could have use LibreOf
 It already have a template for some Dymo labels, I just needed to determine which was the one loaded in my printer. After some time of measuring a label and comparing to the properties of many templates I realized that the reference indicated by the `part #` of the product info was the reference indicated on the box of the labels :
 [![Dymo labels 99012 box](/resources/using-dymo-labelwriter-450-on-linux/99012.jpg)](/resources/using-dymo-labelwriter-450-on-linux/99012.jpg)
 [![Dymo template for labels 99012 in gLabels](/resources/using-dymo-labelwriter-450-on-linux/glabels-properties.png)](/resources/using-dymo-labelwriter-450-on-linux/glabels-properties.png)
-Just needed to edit my labels:
+
+Just needed to edit my labels:  
 [![gLabels edition window](/resources/using-dymo-labelwriter-450-on-linux/glabels-edit.png)](/resources/using-dymo-labelwriter-450-on-linux/glabels-edit.png)
-And print it:
-[![gLabels print window](/resources/using-dymo-labelwriter-450-on-linux/glabels-print.png)](/resources/using-dymo-labelwriter-450-on-linux/glabels-print.png)
+
+And print it:  
+[![gLabels print window](/resources/using-dymo-labelwriter-450-on-linux/glabels-print.png)](/resources/using-dymo-labelwriter-450-on-linux/glabels-print.png)  
 [![gLabels printer selection window](/resources/using-dymo-labelwriter-450-on-linux/glabels-print-window.png)](/resources/using-dymo-labelwriter-450-on-linux/glabels-print-window.png)
 
 #### Sources:
