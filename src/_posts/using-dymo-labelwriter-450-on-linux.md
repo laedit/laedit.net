@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Using Dymo LabelWriter 450 on Linux
+title: Using a Dymo LabelWriter 450 on Linux
 comments: true
 tags: [dymo, printer, linux]
 date: 2025-08-16
