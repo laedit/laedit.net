@@ -4,7 +4,7 @@ title: Using Dymo LabelWriter 450 on Linux
 comments: true
 tags: [dymo, printer, linux]
 date: 2025-08-16
-mastodon_id: 
+mastodon_id: 115039210438538230
 ---
 
 I am mainly writing this for future me in case I need it again. I needed to print some labels with my Dymo LabelWriter 450 and haven't done this since switching to Linux. Even on Windows it wasn't that easy so I expected some hassle on linux.  
