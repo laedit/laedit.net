@@ -18,7 +18,7 @@ Then connecting the printer and if you have lost the manual [Dymo has some artic
 And the printer is already recognized by the system :  
 [![Dymo LabelWriter 450 in the Printers window](/resources/using-dymo-labelwriter-450-on-linux/printers.png)](/resources/using-dymo-labelwriter-450-on-linux/printers.png)
 
-So the last part was to edit the labels and print them. I could have use LibreOffice Writer which is already installed but prefered to check for a specialized software and thnks to [Garth Vander Houwen](https://medium.com/@garthvh/dymo-labelwriter-450-thermal-printer-ubuntu-setup-13362906a8ca) I discovered [gLabels](glabels.org).
+So the last part was to edit the labels and print them. I could have use LibreOffice Writer which is already installed but prefered to check for a specialized software and thnks to [Garth Vander Houwen](https://medium.com/@garthvh/dymo-labelwriter-450-thermal-printer-ubuntu-setup-13362906a8ca) I discovered [gLabels](http://glabels.org).
 It already have a template for some Dymo labels, I just needed to determine which was the one loaded in my printer. After some time of measuring a label and comparing to the properties of many templates I realized that the reference indicated by the `part #` of the product info was the reference indicated on the box of the labels :  
 [![Dymo labels 99012 box](/resources/using-dymo-labelwriter-450-on-linux/99012.jpg)](/resources/using-dymo-labelwriter-450-on-linux/99012.jpg)
 [![Dymo template for labels 99012 in gLabels](/resources/using-dymo-labelwriter-450-on-linux/glabels-properties.png)](/resources/using-dymo-labelwriter-450-on-linux/glabels-properties.png)
