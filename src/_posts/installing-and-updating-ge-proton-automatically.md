@@ -100,6 +100,23 @@ run-parts --verbose /etc/cron.weekly
 
 Happy gaming!
 
+Edit:  
+To avoid beeing flooded with GE-Proton versions I added the folowing lines at the end of the screen in order to remove up until the last 2 versions:
+``` sh
+# remove older versions
+installedFolders=($(ls -d ${dir}GE-Proton* | sort -Vk1))
+if [[ ${#installedFolders[@]} -gt $maxGEProtonVersionsInstalled ]] ; then
+    nbVersionsToRemove=$((${#installedFolders[@]}-$maxGEProtonVersionsInstalled))
+    for (( i=0; i<${nbVersionsToRemove}; i++ ));
+    do 
+        echo "removing ${installedFolders[$i]}"
+        rm -rf "${installedFolders[$i]}"; 
+    done
+else
+    echo "No older versions to remove"
+fi
+```
+
 Sources:
 - <https://github.com/GloriousEggroll/proton-ge-custom>
 - <https://github.com/ValveSoftware/Proton>
