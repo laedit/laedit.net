@@ -52,7 +52,10 @@ And then I will have the details of the subsection.
 
 With pretzel / liquid I used the following to format date: `{% raw %}{{ page.date | date: "%Y-%m-%d" }}{% endraw %}`.  
 In tera its become: `{% raw %}{{ page.date | date(format="%Y-%m-%d") }}{% endraw %}`, the format is based on [strftime](https://docs.rs/jiff/latest/jiff/fmt/strtime/index.html#conversion-specifications).  
-No big change for basic formatting but if you want to have the date in plain word that is done with the locale parameter: `{% raw %}{{ page.date | date(format="d MMMM y", locale="fr") }}{% endraw %}`.  
+No big change for basic formatting but if you want to have the date in plain word that is done with the locale parameter: 
+``` liquid
+{% raw %}{{ page.date | date(format="d MMMM y", locale="fr") }}{% endraw %}
+```
 Note that the format with locale is based on [UTS-35 datetime patterns](https://unicode.org/reports/tr35/tr35-dates.html#Date_Field_Symbol_Table).
 
 #### Frontmatter
@@ -87,17 +90,15 @@ I also had all my posts in the same folder so I took advantage of this migration
 The `content` folder in Zola is where you keep all markdown files which will be transformed to html, and then there is one folder by date part: year, month and day. Zole considers each `content` subfolder as a section, like a collection of pages of the same theme, but it was not what I was after so I used the `transparent` property of each section (day, month, year) which allows pages to be moved backup up to the parent section so that the home page can get them all in once to list them.  
 The only hiccup encountered was that since the home page is not a section it does not have a `sort_by` property and the sort of the pages has to be done manually like this:
 ``` liquid
-{%- raw %}
-section.pages | sort(attribute="date") | reverse
-{%- endraw -%}
+{% raw %}section.pages | sort(attribute="date") | reverse{% endraw %}
 ```
 
 #### Sources:
-- https://www.getzola.org/documentation
-- https://keats.github.io/tera/
-- https://github.com/Keats/tera/blob/master/MIGRATION.md
-- https://github.com/Keats/tera/blob/master/tera-contrib/README.md
-- https://zola.discourse.group
-- https://eduardouribe.com/date-formatting-on-tera/
-- https://doc.rust-lang.org/std/fmt/
-- https://docs.rs/jiff/latest/jiff/fmt/strtime/index.html
+- <https://www.getzola.org/documentation>
+- <https://keats.github.io/tera/>
+- <https://github.com/Keats/tera/blob/master/MIGRATION.md>
+- <https://github.com/Keats/tera/blob/master/tera-contrib/README.md>
+- <https://zola.discourse.group>
+- <https://eduardouribe.com/date-formatting-on-tera/>
+- <https://doc.rust-lang.org/std/fmt/>
+- <https://docs.rs/jiff/latest/jiff/fmt/strtime/index.html>
