@@ -30,19 +30,19 @@ Here is some tips and the major changes I had to do.
 #### Debug
 It is possible to display the content of a variable, for example for sub-sections:
 ```liquid
-{% raw -%}
+{%- raw -%}
 {% for subsection in section.subsections %}
 subsection: {{ subsection }}
 {% endfor %}
-{%- endraw %}
+{%- endraw -%}
 ```
 
 Thanks to that I realized that `subsection` was only the name of the subsection and you have to load the object through:
 ``` liquid
-{% raw -%}
+{%- raw -%}
 {% set fullSubsection = get_section(path=subsection) %}
 subsection: {{ fullSubsection }}
-{%- endraw %}
+{%- endraw -%}
 ```
 And then I will have the details of the subsection.
 
@@ -50,9 +50,9 @@ And then I will have the details of the subsection.
 
 #### Date format
 
-With pretzel / liquid I used the following to format date: `{{ page.date | date: "%Y-%m-%d" }}`.  
-In tera its become: `{{ page.date | date(format="%Y-%m-%d") }}`, the format is based on [strftime](https://docs.rs/jiff/latest/jiff/fmt/strtime/index.html#conversion-specifications).  
-No big change for basic formatting but if you want to have the date in plain word that is done with the locale parameter: `{{ page.date | date(format="d MMMM y", locale="fr") }}`.  
+With pretzel / liquid I used the following to format date: `{% raw %}{{ page.date | date: "%Y-%m-%d" }}{% endraw %}`.  
+In tera its become: `{% raw %}{{ page.date | date(format="%Y-%m-%d") }}{% endraw %}`, the format is based on [strftime](https://docs.rs/jiff/latest/jiff/fmt/strtime/index.html#conversion-specifications).  
+No big change for basic formatting but if you want to have the date in plain word that is done with the locale parameter: `{% raw %}{{ page.date | date(format="d MMMM y", locale="fr") }}{% endraw %}`.  
 Note that the format with locale is based on [UTS-35 datetime patterns](https://unicode.org/reports/tr35/tr35-dates.html#Date_Field_Symbol_Table).
 
 #### Frontmatter
@@ -80,8 +80,8 @@ editor = "J´ai Lu"
 Note that the `layout` in Pretzel become `template` in Zola. It can be defined in a section `_index.md` file to avoig having it in all posts.
 
 #### Structure
-By default Zola generates page [slug].md in url like [slug]/index.html, but before I had url like [slug].html instead.  
-Zola doesn't have a native way to change the generation pattern (the creator doesn't like the [slug].html urls) but it provides a way to have a redirection through the `aliases` property as seen on the preceding paragraph: each entry in this property will generate an html page with a redirect through javascript and html to the [slug]/index.html url. This was sufficient to avoid breaking any links or bookmarks to this site.
+By default Zola generates page `[slug].md` in url like `[slug]/index.html`, but before I had url like `[slug].html` instead.  
+Zola doesn't have a native way to change the generation pattern (the creator doesn't like the `[slug].html` urls) but it provides a way to have a redirection through the `aliases` property as seen on the preceding paragraph: each entry in this property will generate an html page with a redirect through javascript and html to the `[slug]/index.html` url. This was sufficient to avoid breaking any links or bookmarks to this site.
 
 I also had all my posts in the same folder so I took advantage of this migration to move them in separate folders, to keep the same urls based on date the new path is like this: `content/2015/10/05/des-fleurs-pour-algernon.md`.  
 The `content` folder in Zola is where you keep all markdown files which will be transformed to html, and then there is one folder by date part: year, month and day. Zole considers each `content` subfolder as a section, like a collection of pages of the same theme, but it was not what I was after so I used the `transparent` property of each section (day, month, year) which allows pages to be moved backup up to the parent section so that the home page can get them all in once to list them.  
@@ -89,7 +89,7 @@ The only hiccup encountered was that since the home page is not a section it doe
 ``` liquid
 {%- raw %}
 section.pages | sort(attribute="date") | reverse
-{% endraw -%}
+{%- endraw -%}
 ```
 
 #### Sources:
