@@ -52,11 +52,11 @@ And then I will have the details of the subsection.
 
 With pretzel / liquid I used the following to format date: 
 ``` liquid
-{% raw %}`{% raw %}{{ page.date | date: "%Y-%m-%d" }}{% endraw %}`{% endraw %}
+{% raw %}{{ page.date | date: "%Y-%m-%d" }}{% endraw %}
 ```
 In tera it is: 
 ``` liquid
-{% raw %}`{% raw %}{{ page.date | date(format="%Y-%m-%d") }}{% endraw %}`{% endraw %}
+{% raw %}{{ page.date | date(format="%Y-%m-%d") }}{% endraw %}
 ```
 The format is based on [strftime](https://docs.rs/jiff/latest/jiff/fmt/strtime/index.html#conversion-specifications).  
 No big change for basic formatting but if you want to have the date in plain word that is done with the locale parameter: 
