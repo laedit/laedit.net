@@ -4,7 +4,7 @@ title: Switching from Pretzel to Zola
 comments: true
 tags: [pretzel, zola, linux]
 date: 2026-10-08
-mastodon_id: 
+mastodon_id: 117404662924190240
 ---
 
 Since I replaced Windows by PopOS on my desktop I am in a strange situation: I use [Pretzel](https://github.com/code52/pretzel) to generate this blog and my [reading list 🇫🇷](https://readinglist.laedit.net/) but it cannot work on Linux.  
