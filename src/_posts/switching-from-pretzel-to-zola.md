@@ -30,15 +30,19 @@ Here is some tips and the major changes I had to do.
 #### Debug
 It is possible to display the content of a variable, for example for sub-sections:
 ```liquid
+{% raw -%}
 {% for subsection in section.subsections %}
 subsection: {{ subsection }}
 {% endfor %}
+{%- endraw %}
 ```
 
 Thanks to that I realized that `subsection` was only the name of the subsection and you have to load the object through:
 ``` liquid
+{% raw -%}
 {% set fullSubsection = get_section(path=subsection) %}
 subsection: {{ fullSubsection }}
+{%- endraw %}
 ```
 And then I will have the details of the subsection.
 
@@ -83,7 +87,9 @@ I also had all my posts in the same folder so I took advantage of this migration
 The `content` folder in Zola is where you keep all markdown files which will be transformed to html, and then there is one folder by date part: year, month and day. Zole considers each `content` subfolder as a section, like a collection of pages of the same theme, but it was not what I was after so I used the `transparent` property of each section (day, month, year) which allows pages to be moved backup up to the parent section so that the home page can get them all in once to list them.  
 The only hiccup encountered was that since the home page is not a section it does not have a `sort_by` property and the sort of the pages has to be done manually like this:
 ``` liquid
+{%- raw %}
 section.pages | sort(attribute="date") | reverse
+{% endraw -%}
 ```
 
 #### Sources:
