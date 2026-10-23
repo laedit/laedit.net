@@ -4,10 +4,10 @@ title: Migrate webextension repositories to sourcehut
 comments: true
 tags: [webextension, sourcehut, git]
 date: 2026-10-23
-mastodon_id: 
+mastodon_id: 117488386370215497
 ---
 
-Still had some webextensions repos on Azure DevOps and decided to migrate them to [sourcehut](https://sourcehut.org/) (and still have some on github but i will migrate them later).
+Still had some webextension repos on Azure DevOps and decided to migrate them to [sourcehut](https://sourcehut.org/) (and still have some on github but i will migrate them later).
 
 **Disclaimer**: This is in no way a precise how-to or maybe the best way to do that, i will just indicate the steps i followed for my case which is only git repositories and build pipelines.{.info}
 
@@ -31,7 +31,7 @@ git remote set-url origin [NEW_URL]
 # push all to new repo
 git push --mirror origin
 ```
-⚠ Use the sourcehut url like git@git.sr.ht:~[username]/[repo] in order to read/write, the https one is for read only.
+⚠ Use the sourcehut url like `git@git.sr.ht:~[username]/[repo]` in order to read/write, the https one is for read only.
 
 Note: If you don't need a project you can skip the creation part and directly change the set-url of the origin remote then push, sourcehut will automatically create the repository.
 
