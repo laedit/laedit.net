@@ -83,6 +83,9 @@ User-Agent: YandexAdditionalBot
 Disallow: /
 DisallowAITraining: /
 
+User-Agent: __usage_ai-training
+Disallow: /
+
 # Block any non-specified AI crawlers (e.g., new
 # or unknown bots) from using content for training
 # AI models, while allowing the website to be
